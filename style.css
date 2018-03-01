@@ -1,16 +1,5 @@
-footer{
-    position: absolute;
-    right: 0;
-    bottom:-5px;
-    left: 0;
-    padding:2px;
-    background-color: lightgray;
-    text-align: center;
-    font-size:3rem;
-    color: rgb(96, 146, 135);
-    font-family: fantasy;
-}
-div,h2,h3{
+
+div,h2,h3,th{
 text-align: center;
 color: rgb(96, 146, 135);
 font-family: fantasy;
@@ -30,12 +19,8 @@ h4{
     padding-bottom: 1px;
     font-size: 2.5rem;
     font-family: fantasy;
-    }
+    }*/
 
-.column {
-float: left;
-width: 33.33%;
-}
 .row{
     margin-top: 30px;
 }
@@ -46,9 +31,8 @@ display: table;
 clear: both;
 }
 img{
-height: 210px;
-width: 70%;
-
+height: 40%;
+width: 50%;
 }
 form { 
 margin-top:20px;
@@ -60,8 +44,23 @@ margin-bottom:50px;
 }
 body{
 background-color: honeydew;
-
+height: 140%;
+position: relative;
 }
 html{
 background-image: url("Bilder/background.jpeg");
+height: 100%;
 }
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
+  th{
+      text-align: left;
+  }
+

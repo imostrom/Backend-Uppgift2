@@ -26,17 +26,13 @@ $table = mysqli_query($connection , $query)
 </tr>
 <?php while($row = $table->fetch_assoc()) : ?>
 <tr>
-    <td><?php echo "<img src='Bilder/" . $row['image'] . "' alt='' width='100'>"; ?></td>
+    <td><?php echo "<img src='Bilder/" . $row['image'] . "' alt=''>"; ?></td>
     <td><?php echo $row['ID'] ?></td>
     <td><?php echo $row['name'] ?></td>
     <td><?php echo $row['description'] ?></td>
     <td><?php echo $row['price'] . " kronor" ?></td>
     <td>
-        <form action="bestallning.php" method="post">
-
-            <input type="submit" value="Köp denna valp" 
-                   class="btn btn-outline-danger">
-        </form>
+        <a href="bestallning.php?namn=<?=$row['name']?>&pris=<?=$row['price']?>" class="btn-md btn-success">Köp</a>
     </td>
 </tr>
 <?php 

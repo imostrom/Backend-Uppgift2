@@ -6,6 +6,9 @@ include 'header.php';
 ?>
 
  <?php
+ if (isset($_GET['namn']) && ($_GET['pris'])){
+
+
 
 $namn = $_GET['namn'];
 $pris = $_GET['pris'];
@@ -54,7 +57,7 @@ Att få hem en ny familjemedlem är alldeles underbart, men det kan även vara o
 <input type="hidden" value="<?=$pris?>" name="pris">
 <tr>
  <td colspan="40" style="text-align:center">
-  <input style="margin:10px;" type="submit value="Beställ nu"> 
+  <input style="margin:10px;" type="submit" value="Beställ nu"> 
  </td>
 </tr>
 </table>
@@ -62,7 +65,9 @@ Att få hem en ny familjemedlem är alldeles underbart, men det kan även vara o
 
 
 <?php
-
+ }else
+ header("Location: index.php");
+ //echo "Sidan finns inte!";
  include 'footer.php';   
  
 

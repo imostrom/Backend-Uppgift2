@@ -16,7 +16,7 @@ Att få hem en ny familjemedlem är alldeles underbart, men det kan även vara o
 
 ?>
 
-<form name="contactform" method="post" action="orders.php">
+<form name="contactform" method="post" action="submit.php">
 <table width="200px">
 <tr>
  <td valign="top">
@@ -54,12 +54,11 @@ Att få hem en ny familjemedlem är alldeles underbart, men det kan även vara o
 <input type="hidden" value="<?=$pris?>" name="pris">
 <tr>
  <td colspan="40" style="text-align:center">
-  <input style="margin:10px;" type="submit" value="Beställ nu"> 
+  <input style="margin:10px;" type="submit value="Beställ nu"> 
  </td>
 </tr>
 </table>
 </form>
-
 
 
 <?php

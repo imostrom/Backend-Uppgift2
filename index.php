@@ -32,9 +32,8 @@ $table = mysqli_query($connection , $query)
     <td><?php echo $row['description'] ?></td>
     <td><?php echo $row['price'] . " kronor" ?></td>
     <td>
-        <form action="update.php" method="post">
+        <form action="bestallning.php" method="post">
 
-            
             <input type="submit" value="Köp denna valp" 
                    class="btn btn-outline-danger">
         </form>

@@ -1,36 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Produkter</title>
-</head>
-<body class='container'>
-    <h2>Lista på våra produkter</h2>
-
 <?php
+$dbHost ="localhost";
+$dbUser ="root";
+$dbPass ="root";
+$dbName ="Webshop";
+$connection = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
+if (!$connection){
+    echo "Felmeddelade<br>" . mysqli_connection_error();
+    exit;
+}
+mysqli_set_charset($connection, "utf8"); 
 
-// steg 1: hämta data via en endpoint/resource
-$data = file_get_contents(
-    "https://localhost/Uppgift-2/index.php");
+$query = "SELECT * FROM products";
+
+$table = mysqli_query($connection , $query)
+          or die (mysqli_error($connection));
+
+$array = array();
+while($row = $table->fetch_assoc()){
+    
+    $array[] = $row;
+}
+
+$json_string = json_encode($array, JSON_PRETTY_PRINT);
 
 
-    //Testa at skriva us JSON
-    // echo "<pre>";
-    //echo $data;
-    // echo "</pre>";
-
-    //steg 2: konvertera JSON-dataa till en PHP-array
-    $array = json_decode($data, true);
-    // OBS! True genererar en associative array
-    //Testa att skriva ut arrayen
-    echo "<pre>";
-    print_r($array);
-    echo "</pre>";
+echo "<pre>";
+echo $json_string;
+echo "</pre>";
 
 ?>
-</body>
-</html>

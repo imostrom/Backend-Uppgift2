@@ -6,10 +6,10 @@ include 'header.php';
 ?>
 
  <?php
- if (isset($_GET['namn']) && ($_GET['pris'])){
+ if (isset ($_GET['ID']) &&($_GET['namn']) && ($_GET['pris'])){
 
 
-
+$ID = $_GET['ID'];
 $namn = $_GET['namn'];
 $pris = $_GET['pris'];
 echo "<h1>Beställning: $namn</h1><br>";
@@ -19,14 +19,14 @@ Att få hem en ny familjemedlem är alldeles underbart, men det kan även vara o
 
 ?>
 
-<form name="contactform" method="post" action="submit.php">
+<form name="contactform" method="post" action="insert.php">
 <table width="200px">
 <tr>
  <td valign="top">
   <label for="kund">Namn: </label>
  </td>
  <td valign="top">
-  <input style="margin:2px;" type="text" ID="kund" name="kund" maxlength="50" size="50" required>
+  <input style="margin:2px;" type="text" name="kundName" maxlength="50" size="50" required>
  </td>
 </tr>
 <tr>
@@ -34,7 +34,7 @@ Att få hem en ny familjemedlem är alldeles underbart, men det kan även vara o
   <label for="email">E-mail: </label>
  </td>
  <td valign="top">
-  <input  style="margin:2px;" type="text" name="email" maxlength="80" size="50" required>
+  <input  style="margin:2px;" type="text" name="kundEmail" maxlength="50" size="50" required>
  </td>
 </tr>
 <tr>
@@ -42,19 +42,20 @@ Att få hem en ny familjemedlem är alldeles underbart, men det kan även vara o
   <label for="address">Address: </label>
  </td>
  <td valign="top">
-  <textarea  style="margin:2px;"  name="address" maxlength="200" cols="40" rows="3" required></textarea>
+ <input style="margin:2px;" type="text" name="kundAdress" maxlength="100" size="50" required>
  </td>
 </tr>
 <tr>
  <td valign="top">
-  <label for="comment">Meddelande: </label>
+  <label for="comment">Telefon: </label>
  </td>
  <td valign="top">
-  <textarea  style="margin:2px;"  name="comment" maxlength="1000" cols="50" rows="6" required></textarea>
+ <input style="margin:2px;" type="text" name="kundTelefon" maxlength="50" size="50" required>
  </td>
 </tr>
-<input type="hidden" value="<?=$namn?>" name="produkt">
-<input type="hidden" value="<?=$pris?>" name="pris">
+<input type="hidden" value="<?=$ID?>" name="product_ID">
+<input type="hidden" value="<?=$namn?>" name="product_name">
+<input type="hidden" value="<?=$pris?>" name="product_price">
 <tr>
  <td colspan="40" style="text-align:center">
   <input style="margin:10px;" type="submit" value="Beställ nu"> 

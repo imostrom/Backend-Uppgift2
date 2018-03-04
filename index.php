@@ -32,7 +32,7 @@ $table = mysqli_query($connection , $query)
     <td><?php echo $row['description'] ?></td>
     <td><?php echo $row['price'] . " kronor" ?></td>
     <td>
-        <a href="bestallning.php?namn=<?=$row['name']?>&pris=<?=$row['price']?>" class="btn-md btn-success">Köp</a>
+        <a href="bestallning.php?ID=<?=$row['ID']?>&namn=<?=$row['name']?>&pris=<?=$row['price']?>" class="btn-md btn-success">Köp</a>
     </td>
 </tr>
 <?php 

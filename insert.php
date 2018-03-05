@@ -3,7 +3,6 @@
 if (isset ($_POST['kundEmail']) &&($_POST['product_ID'])){
 
 
-print_r($_POST);
 
 /*
 Array

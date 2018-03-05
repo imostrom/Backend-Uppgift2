@@ -1,76 +1,104 @@
 
-div,h2,h3{
+h2,h3{
 text-align: center;
 color: rgb(96, 146, 135);
-font-family: fantasy;
-font-size: 1.5rem;
+font-family: 'Philosopher', sans-serif;
+font-size: 1.9rem;
 margin-bottom:5px;
 }
-h1,p,a{
-text-align: center;
-color: darkslateblue;
-padding: 2px;
-margin-bottom: 2px;
-font-family: fantasy;
+div,h2,h3{
+    text-align: center;
+    color: rgb(96, 146, 135);
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.6rem;
+    margin-bottom:5px;
 }
+p,a{
+text-align: center;
+color: black;
+padding: 8px;
+margin-bottom: 5px;
+font-family: 'Philosopher', sans-serif;
+}
+h1{
+    text-align: center;
+    color: rgb(102, 101, 101);
+    margin-top: 0;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-family: 'Philosopher', sans-serif;
+    }
 h4{
     text-align: center;
     color: darkslateblue;
     padding-bottom: 1px;
-    font-size: 2.5rem;
-    font-family: fantasy;
-    }*/
+    font-size: 2.9rem;
+    font-family: 'Philosopher', sans-serif;
+    }
 
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
+    .row{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
 img{
-height: 40%;
-width: 50%;
+height: 50%;
+width: 75%;
 }
 form { 
 margin-top:20px;
-margin-left: 30%;
+margin-left: 20%;
 margin-right:30%;
+margin-bottom:10%;
 width: 70%;
-margin-bottom:50px;
+
 
 }
 body{
-background-color: honeydew;
 position: relative;
-height:112%
+height:relative;
+width: 70%;
 }
 html{
-background-image: url("Bilder/background.jpeg");
-height:100%
+background-image: url("Bilder/dog.jpg");
+height:relative;
 
 }
 footer {
-    position: absolute;
+position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #efefef;
+    background-color: skyblue; 
     text-align: center;
-    padding: 10px;
-    margin-top: 100px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.9rem;
+    margin-top: 30px;
   }
 th,td{
 text-align: left;
-font-size: 2rem;
+font-size: 2.4rem;
 color: rgb(96, 146, 135);
-font-family: fantasy;
+font-family: 'Philosopher', sans-serif;
 margin:10px;
 }
 td{
-padding:30px;
+padding:20px;
 }
 .header{
-margin-bottom:50px;    
+background-color: skyblue;  
+text-align: center;
+font-size: 3.9rem;
+}
+.container{
+width: 60%;
 }
 
 

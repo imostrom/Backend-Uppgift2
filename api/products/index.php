@@ -23,9 +23,7 @@ while($row = $table->fetch_assoc()){
 
 $json_string = json_encode($array, JSON_PRETTY_PRINT);
 
-
-echo "<pre>";
 echo $json_string;
-echo "</pre>";
+
 
 ?>

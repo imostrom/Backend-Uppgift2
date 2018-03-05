@@ -12,5 +12,7 @@
     
 </head>
 <body class="container">
+<div class="header">
 <h1><a href="index.php"><b>TeaPup Webbshop</b></a></h1>
-<hr>
+</div>
+

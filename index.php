@@ -22,6 +22,7 @@ $table = mysqli_query($connection , $query)
     <th>Namn</th> 
     <th>Beskrivning</th> 
     <th>Pris</th>
+    <th>Köp</th>
    
 </tr>
 <?php while($row = $table->fetch_assoc()) : ?>

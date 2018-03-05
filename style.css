@@ -1,5 +1,5 @@
 
-div,h2,h3,th{
+div,h2,h3{
 text-align: center;
 color: rgb(96, 146, 135);
 font-family: fantasy;
@@ -21,10 +21,6 @@ h4{
     font-family: fantasy;
     }*/
 
-.row{
-    margin-top: 30px;
-}
-
 .row:after {
 content: "";
 display: table;
@@ -44,14 +40,15 @@ margin-bottom:50px;
 }
 body{
 background-color: honeydew;
-height: 140%;
 position: relative;
+height:112%
 }
 html{
 background-image: url("Bilder/background.jpeg");
-height: 100%;
+height:100%
+
 }
-.footer {
+footer {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -59,8 +56,21 @@ height: 100%;
     padding: 1rem;
     background-color: #efefef;
     text-align: center;
+    padding: 10px;
+    margin-top: 100px;
   }
-  th{
-      text-align: left;
-  }
+th,td{
+text-align: left;
+font-size: 2rem;
+color: rgb(96, 146, 135);
+font-family: fantasy;
+margin:10px;
+}
+td{
+padding:30px;
+}
+.header{
+margin-bottom:50px;    
+}
+
 

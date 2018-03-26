@@ -1,36 +1,46 @@
 
-h2,h3{
-text-align: center;
-color: rgb(96, 146, 135);
-font-family: 'Philosopher', sans-serif;
-font-size: 1.9rem;
-margin-bottom:5px;
-}
 div,h2,h3{
     text-align: center;
-    color: rgb(96, 146, 135);
+    color:  rgb(133, 133, 133);
     font-family: 'Philosopher', sans-serif;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     margin-bottom:5px;
+}
+.kennel{
+    text-align: center;
+    color:  rgb(63, 84, 141);
+    font-family: 'Philosopher', sans-serif;
+    font-size: 2.3rem;
+    margin-bottom:0px;  
 }
 p,a{
 text-align: center;
-color: black;
+color: rgb(0, 0, 0);
 padding: 8px;
 margin-bottom: 5px;
 font-family: 'Philosopher', sans-serif;
 }
-h1{
+.buy{
     text-align: center;
-    color: rgb(102, 101, 101);
+   background-color:rgb(247, 184, 159); 
+   border: solid 4px lightgray;
+   border-radius: 200px;
+    color: rgb(133, 133, 133);
+    padding: 20px;
+    font-family: 'Philosopher', sans-serif;
+    }
+h1,.heading{
+    font-size: 65px;
+    text-align: center;
+
     margin-top: 0;
     padding: 15px;
     margin-bottom: 5px;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Gochi Hand', cursive;
     }
 h4{
     text-align: center;
-    color: darkslateblue;
+    color:  rgb(133, 133, 133);
     padding-bottom: 1px;
     font-size: 2.9rem;
     font-family: 'Philosopher', sans-serif;
@@ -39,6 +49,7 @@ h4{
     .row{
         margin-top: 30px;
         margin-bottom: 30px;
+
     }
     
     .row:after {
@@ -49,14 +60,18 @@ h4{
 
 img{
 height: 50%;
-width: 75%;
+width: 65%;
+border: solid darkgray 5px;
+border-radius: 150px;
 }
 form { 
-margin-top:20px;
+margin-top:0;
 margin-left: 20%;
 margin-right:30%;
-margin-bottom:10%;
+margin-bottom:30%;
 width: 70%;
+padding: 20px;
+padding-bottom: 0;
 
 
 }
@@ -76,29 +91,66 @@ position: absolute;
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: skyblue; 
+    background-color:rgb(247, 184, 159); 
     text-align: center;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Gochi Hand', cursive;
     font-size: 2.9rem;
-    margin-top: 30px;
+
   }
-th,td{
+th{
 text-align: left;
-font-size: 2.4rem;
-color: rgb(96, 146, 135);
+font-size: 2rem;
+color:  rgb(133, 133, 133);
 font-family: 'Philosopher', sans-serif;
-margin:10px;
+margin:15px;
+padding-right: 25px;
+
 }
 td{
-padding:20px;
+text-align: left;
+font-size: 2rem;
+color:  rgb(133, 133, 133);
+font-family: 'Philosopher', sans-serif;
+margin:10px;
+padding: 5px;
+padding-top: 10px;
+
 }
 .header{
-background-color: skyblue;  
-text-align: center;
-font-size: 3.9rem;
+background-color: rgb(247, 184, 159); 
+
 }
 .container{
-width: 60%;
+    background-color: rgb(255, 255, 255);
+width: 75%;
+padding-right: 0;
+padding-left: 0;
+margin-left: 180px;
+margin-right: 180px;
+margin-top: 0;
 }
-
+.table {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 70px;
+        margin-right: 35px;
+        margin-left: 0;
+    
+}
+.order{
+    text-align: left;
+}
+#icon{
+    border: none;
+}
+.pic{
+    text-align: center;
+}
+input,textarea{
+  
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Philosopher', sans-serif;
+}
 

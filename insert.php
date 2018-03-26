@@ -3,20 +3,6 @@
 if (isset ($_POST['kundEmail']) &&($_POST['product_ID'])){
 
 
-
-/*
-Array
-(
-    [kundName] => ida
-    [kundEmail] => imostrom@gmail.com
-    [kundAdress] => 21 College Drive
-    [kundTelefon] => 345678
-    [product_ID] => 2
-    [product_name] => Pelle
-    [product_price] => 7000
-)
-*/
-
 require 'connect.php';
 $name    =  $_POST['kundName'];
 $adress  =  $_POST['kundAdress'];

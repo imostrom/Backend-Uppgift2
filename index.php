@@ -17,23 +17,24 @@ $table = mysqli_query($connection , $query)
 
 <table class="table">
 <tr> 
-    <th>Bild</th>  
+    <th>  </th> 
     <th>Artikelnummer</th> 
-    <th>Namn</th> 
+    <th>Namn </th> 
     <th>Beskrivning</th> 
     <th>Pris</th>
-    <th>Köp</th>
+    <th>     </th> 
+
    
 </tr>
 <?php while($row = $table->fetch_assoc()) : ?>
 <tr>
-    <td><?php echo "<img src='Bilder/" . $row['image'] . "' alt=''>"; ?></td>
+    <td class="pic"><?php echo "<img src='Bilder/" . $row['image'] . "' alt=''>"; ?></td>
     <td><?php echo $row['ID'] ?></td>
     <td><?php echo $row['name'] ?></td>
     <td><?php echo $row['description'] ?></td>
     <td><?php echo $row['price'] . " kronor" ?></td>
     <td>
-        <a href="bestallning.php?ID=<?=$row['ID']?>&namn=<?=$row['name']?>&pris=<?=$row['price']?>" class="btn-md btn-info">Köp</a>
+       <br> <a class="buy" href="bestallning.php?ID=<?=$row['ID']?>&namn=<?=$row['name']?>&pris=<?=$row['price']?>" class="btn-md btn-info">Köp</a>
     </td>
 </tr>
 <?php 
